@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مدرسة شمامسة كنيسة العائلة المقدسة</title>
+<style>
+:root{--bg:#f6f1e7;--card:#fff;--tx:#2b2118;--mu:#8a7b68;--ac:#7d2a35;--ac2:#a63d4b;--ln:#ece3d3;--g1:#2f7d4f;--g2:#b7791f;--g3:#7d2a35;--sh:0 2px 10px rgba(60,40,20,.08);box-sizing:border-box}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17120e;--card:#241d16;--tx:#f3eadb;--mu:#a99a85;--ac:#c4505f;--ac2:#e08a93;--ln:#3a3025;--g1:#5fc58a;--g2:#e0a94a;--g3:#e08a93;--sh:none}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-size:16px;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,#6b1f2a,#a63d4b);color:#fff;padding:calc(10px + env(safe-area-inset-top,0px)) 14px 12px;display:flex;align-items:center;gap:10px}
+header .cross{font-size:26px}
+header .tt{flex:1;line-height:1.35}header .tt b{font-size:15px;display:block}header .tt small{opacity:.85;font-size:12px}
+.hb{width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:18px}
+.hb.on{background:#fff;color:var(--ac)}
+main{padding:14px;max-width:640px;margin:auto}
+h2{margin:4px 2px 12px;font-size:19px}
+.card{background:var(--card);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:var(--sh);border:1px solid var(--ln)}
+.mu{color:var(--mu);font-size:13px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:2px}
+.chip{flex:none;padding:8px 16px;border-radius:99px;border:1px solid var(--ln);background:var(--card);color:var(--mu);font:inherit;font-size:14px}
+.chip.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.dnav{display:flex;align-items:center;gap:8px}
+.dnav button{width:42px;height:42px;border-radius:12px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);font-size:18px}
+.dnav .d{flex:1;text-align:center;font-weight:700}.dnav .d small{display:block;font-weight:400;color:var(--mu);font-size:12px}
+.bar{height:8px;background:var(--ln);border-radius:9px;overflow:hidden;margin-top:10px}.bar i{display:block;height:100%;background:var(--g1);border-radius:9px;transition:width .3s}
+.row{display:flex;align-items:center;gap:12px;padding:10px 4px;border-bottom:1px solid var(--ln)}.row:last-child{border:0}
+.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;flex:none}
+.nm{flex:1;min-width:0}.nm b{display:block;font-weight:600}.nm span{font-size:12px;color:var(--mu)}
+.tap{cursor:pointer}
+.ck{width:30px;height:30px;border-radius:50%;border:2px solid var(--ln);display:grid;place-items:center;color:#fff;flex:none;font-size:16px}
+.ck.on{background:var(--g1);border-color:var(--g1)}
+input,select{font:inherit;padding:12px;border-radius:12px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);width:100%;min-width:0}
+.btn{font:inherit;padding:12px 18px;border-radius:12px;border:0;background:var(--ac);color:#fff;font-weight:600}
+.btn.s{background:var(--bg);color:var(--tx);border:1px solid var(--ln)}.btn.f{width:100%}
+.rb{width:44px;height:44px;border-radius:50%;border:0;font-size:20px;font-weight:700;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:12px 6px;text-align:center;box-shadow:var(--sh)}
+.stat b{display:block;font-size:26px;color:var(--ac)}.stat span{font-size:12px;color:var(--mu)}
+.pill{display:inline-block;background:var(--bg);border-radius:99px;padding:3px 11px;font-size:13px;margin:2px}
+.gap{display:flex;gap:8px;margin-bottom:10px}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%}td,th{padding:9px 7px;border-bottom:1px solid var(--ln);text-align:right;font-size:13px;white-space:nowrap}th{color:var(--mu);font-weight:600}
+.empty{text-align:center;color:var(--mu);padding:22px 0}
+.kv{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.kv:last-child{border:0}
+nav{position:fixed;bottom:0;inset-inline:0;z-index:20;display:flex;background:var(--card);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;border:0;background:none;color:var(--mu);font:inherit;font-size:11px;padding:9px 0 8px}
+nav button i{display:block;font-style:normal;font-size:22px;margin-bottom:2px;filter:grayscale(1);opacity:.6}
+nav button.on{color:var(--ac);font-weight:700}nav button.on i{filter:none;opacity:1}
+</style>
+</head>
+<body>
+<header><div class="cross">✝</div><div class="tt"><b>مدرسة شمامسة كنيسة العائلة المقدسة</b><small id="role">اللبيني – هرم</small></div><button class="hb" id="h-q" onclick="go('q')">🔍</button><button class="hb" id="h-adm" onclick="go('adm')">⚙️</button></header>
+<main id="app"><div class="empty">جاري التحميل…</div></main>
+<nav id="nav"></nav>
+<script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import{getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged,createUserWithEmailAndPassword,sendPasswordResetEmail}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import{getFirestore,collection,doc,setDoc,deleteDoc,getDoc,onSnapshot}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+const cfg={apiKey:"AIzaSyDhDE8ngvFQ70RIWtw2Si0QLKB0zlOnbjA",authDomain:"shmamsa-b31e0.firebaseapp.com",projectId:"shmamsa-b31e0",storageBucket:"shmamsa-b31e0.firebasestorage.app",messagingSenderId:"7263114508",appId:"1:7263114508:web:aeccdeb605f3906da52529"};
+const app=initializeApp(cfg),auth=getAuth(app),db=getFirestore(app);
+const OWNER="ana.filo2007@gmail.com";
+let user=null,admins=[],unsubs=[];
+const STAGES=["ابتدائي","إعدادي وثانوي","خدام وكبار"],COL=["var(--g1)","var(--g2)","var(--g3)"];
+const TABS=[["att","✅","الحضور"],["stu","👦","الأولاد"],["pts","⭐","بونص"],["gr","📝","الدرجات"],["rep","📊","التقارير"]];
+let tab="att",stage="الكل",date=ws(today()),isOwner=false,canWrite=false,ready=false,qq="";
+let S=[],A={},P={},G={};
+function today(){return fmt(new Date())}
+function ws(s){const x=new Date(s+"T00:00:00");x.setDate(x.getDate()-((x.getDay()+1)%7));return fmt(x)}
+function rng(s){const a=new Date(s+"T00:00:00"),b=new Date(a);b.setDate(b.getDate()+6);const f=d=>d.toLocaleDateString("ar-EG",{day:"numeric",month:"long"});return f(a)+" – "+f(b)}
+function wlab(s){const k=Math.round((new Date(s+"T00:00:00")-new Date(ws(today())+"T00:00:00"))/6048e5);return k===0?"الأسبوع الحالي":k===-1?"الأسبوع الماضي":k===1?"الأسبوع القادم":""}
+function weeksOf(y){const r=[];let s=ws(y+"-01-01");while(s<=y+"-12-31"){r.push(s);const d=new Date(s+"T00:00:00");d.setDate(d.getDate()+7);s=fmt(d)}return r}
+function weekSel(){const m=new Date(date+"T00:00:00");m.setDate(m.getDate()+3);const y=fmt(m).slice(0,4);
+  return `<div class="dnav"><button onclick="sh(-1)">›</button><div class="d">${rng(date)}<small>${wlab(date)?wlab(date)+" · ":""}${y}</small></div><button onclick="sh(1)">‹</button></div>
+  <select style="margin-top:10px" onchange="setDate(this.value)">${weeksOf(y).map(s=>`<option value="${s}" ${s===date?"selected":""}>${wlab(s)?wlab(s)+" · ":""}${rng(s)}</option>`).join("")}</select>`}
+function fmt(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const list=()=>S.filter(s=>stage==="الكل"||s.stage===stage).sort((a,b)=>a.name.localeCompare(b.name,"ar"));
+const pres=d=>(A[d]&&A[d].p)||[];
+const nm=id=>(S.find(s=>s.id===id)||{name:"(محذوف)"}).name;
+const av=s=>`<div class="av" style="background:${COL[Math.max(0,STAGES.indexOf(s.stage))]}">${esc(s.name.trim()[0]||"?")}</div>`;
+const chips=()=>`<div class="chips">${["الكل",...STAGES].map(x=>`<button class="chip ${x===stage?"on":""}" onclick="setStage('${x}')">${x}</button>`).join("")}</div>`;
+function wk(d){const x=new Date(d+"T00:00:00");x.setDate(x.getDate()-((x.getDay()+1)%7));return x.getTime()}
+function go(t){tab=t;draw();scrollTo(0,0)}
+function init(){
+  $("nav").innerHTML=TABS.map(t=>`<button id="t-${t[0]}" onclick="go('${t[0]}')"><i>${t[1]}</i>${t[2]}</button>`).join("");
+  onAuthStateChanged(auth,async u=>{
+    unsubs.forEach(f=>f());unsubs=[];S=[];A={};P={};G={};admins=[];
+    user=u;isOwner=!!u&&u.email.toLowerCase()===OWNER;canWrite=isOwner;
+    if(u&&!isOwner){try{canWrite=(await getDoc(doc(db,"admins",u.uid))).exists()}catch(e){}}
+    $("role").textContent=canWrite?(isOwner?"الأدمن الرئيسي":"أدمن مساعد")+" · اللبيني – هرم":"اللبيني – هرم";
+    if(canWrite){
+      const sub=(c,f)=>unsubs.push(onSnapshot(collection(db,c),q=>{f(q.docs);draw()},e=>console.error(e)));
+      sub("students",d=>S=d.map(x=>({id:x.id,...x.data()})));
+      sub("att",d=>{A={};d.forEach(x=>A[x.id]=x.data())});
+      sub("pts",d=>{P={};d.forEach(x=>P[x.id]=x.data())});
+      sub("grades",d=>{G={};d.forEach(x=>G[x.id]=x.data())});
+      if(isOwner)sub("admins",d=>admins=d.map(x=>({id:x.id,...x.data()})));
+    }
+    ready=true;draw();
+  });
+}
+function draw(){
+  if(!ready)return;
+  $("nav").style.display=canWrite?"flex":"none";$("h-q").style.display=$("h-adm").style.display=canWrite?"":"none";
+  if(!user){$("app").innerHTML=vLogin();return}
+  if(!canWrite){$("app").innerHTML=`<div class="card empty">حسابك مش مضاف كأدمن. كلّم الأدمن الرئيسي.<br><br><button class="btn" onclick="out()">تسجيل الخروج</button></div>`;return}
+  TABS.forEach(t=>$("t-"+t[0]).className=t[0]===tab?"on":"");
+  $("h-q").className="hb"+(tab==="q"?" on":"");$("h-adm").className="hb"+(tab==="adm"?" on":"");
+  const f=document.activeElement&&document.activeElement.id;
+  $("app").innerHTML={att:vAtt,stu:vStu,pts:vPts,gr:vGr,rep:vRep,q:vQ,adm:vAdm}[tab]();
+  if(f&&$(f)&&f!=="qi")$(f).focus();
+}
+async function w(fn){try{await fn()}catch(e){alert("مش مسموح لك بالتعديل ده")}}
+/* attendance */
+function vAtt(){
+  const p=pres(date),L=list(),n=L.filter(s=>p.includes(s.id)).length;
+  
+  return `<div class="card">${weekSel()}
+  <div class="bar"><i style="width:${L.length?n/L.length*100:0}%"></i></div><div class="mu" style="margin-top:8px">حضر ${n} من ${L.length}</div></div>${chips()}
+  <div class="card">${L.map(s=>`<div class="row tap" onclick="${canWrite?`tog('${s.id}',${!p.includes(s.id)})`:""}">${av(s)}<div class="nm"><b>${esc(s.name)}</b><span>${s.stage}</span></div><div class="ck ${p.includes(s.id)?"on":""}">${p.includes(s.id)?"✓":""}</div></div>`).join("")||'<div class="empty">مفيش أسماء</div>'}</div>`;
+}
+function sh(k){const d=new Date(date+"T00:00:00");d.setDate(d.getDate()+7*k);date=fmt(d);draw()}
+function tog(id,on){const p=pres(date).filter(x=>x!==id);if(on)p.push(id);A[date]={p};draw();w(()=>setDoc(doc(db,"att",date),{p}))}
+/* students */
+function vStu(){
+  return `<h2>الأولاد (${S.length})</h2>`+(isOwner?`<div class="card"><div class="gap"><input id="nn" placeholder="اسم الولد"></div><div class="gap"><select id="ns">${STAGES.map(x=>`<option>${x}</option>`).join("")}</select></div><button class="btn f" onclick="addS()">＋ إضافة ولد</button></div>`:'<div class="card mu">الأدمن الرئيسي فقط هو اللي يضيف الأولاد.</div>')
+  +chips()+`<div class="card">${list().map(s=>`<div class="row">${av(s)}<div class="nm"><b>${esc(s.name)}</b><span>${s.stage}</span></div>${isOwner?`<button class="btn s" onclick="delS('${s.id}')">حذف</button>`:""}</div>`).join("")||'<div class="empty">مفيش أسماء</div>'}</div>`;
+}
+function addS(){const n=$("nn").value.trim();if(!n)return;const id="s"+Date.now();w(()=>setDoc(doc(db,"students",id),{name:n,stage:$("ns").value}));$("nn").value=""}
+function delS(id){if(confirm("حذف "+nm(id)+"؟"))w(()=>deleteDoc(doc(db,"students",id)))}
+/* bonus */
+function vPts(){
+  return `<h2>البونص والماينس</h2>${chips()}<div class="card">${list().map(s=>{const p=P[s.id]||{b:0,m:0};return `<div class="row">${av(s)}<div class="nm"><b>${esc(s.name)}</b><span>⭐ ${p.b||0} بونص · ⚠️ ${p.m||0} ماينس</span></div>${canWrite?`<button class="rb" style="background:var(--g1)" onclick="pt('${s.id}','b')">＋</button><button class="rb" style="background:var(--g3)" onclick="pt('${s.id}','m')">－</button>`:""}</div>`}).join("")||'<div class="empty">مفيش أسماء</div>'}</div><div class="mu" style="text-align:center">＋ بونص (أخضر) · － ماينس (أحمر)</div>`;
+}
+function pt(id,k){const p={b:0,m:0,...(P[id]||{})};p[k]++;P[id]=p;draw();w(()=>setDoc(doc(db,"pts",id),p))}
+/* grades */
+function vGr(){
+  return `<h2>الدرجات</h2>${chips()}`+(list().map(s=>{const g=(G[s.id]&&G[s.id].l)||[];return `<div class="card"><div class="row" style="padding-top:0">${av(s)}<div class="nm"><b>${esc(s.name)}</b><span>${s.stage}</span></div></div><div>${g.map(x=>`<span class="pill">${esc(x.t)}: <b>${x.s}</b></span>`).join("")||'<span class="mu">لا درجات</span>'}</div>${canWrite?`<div class="gap" style="margin:10px 0 0"><input id="gt${s.id}" placeholder="المادة / الامتحان"><input id="gs${s.id}" type="number" inputmode="decimal" placeholder="الدرجة" style="max-width:100px"><button class="btn" onclick="addG('${s.id}')">＋</button></div>`:""}</div>`}).join("")||'<div class="card empty">مفيش أولاد لسه. ضيفهم الأول من تبويب «الأولاد»</div>');
+}
+function addG(id){const t=$("gt"+id).value.trim(),s=$("gs"+id).value;if(!t||s==="")return;const l=[...((G[id]&&G[id].l)||[]),{t,s:+s}];G[id]={l};draw();w(()=>setDoc(doc(db,"grades",id),{l}))}
+/* reports */
+function cnt(f){const c={};Object.keys(A).filter(f).forEach(d=>pres(d).forEach(id=>c[id]=(c[id]||0)+1));return c}
+const ids=c=>Object.keys(c).filter(i=>S.some(s=>s.id===i));
+function vRep(){
+  const w0=wk(date),m=date.slice(0,7),y=date.slice(0,4),wc=cnt(d=>wk(d)===w0),mc=cnt(d=>d.startsWith(m));
+  const yc=cnt(d=>d.startsWith(y)),top=Object.entries(yc).filter(e=>S.some(s=>s.id===e[0])).sort((a,b)=>b[1]-a[1]);
+  const n=Object.keys(A).filter(d=>d.startsWith(y)&&pres(d).length).length;
+  const names=c=>ids(c).map(i=>`<span class="pill">${esc(nm(i))}</span>`).join("")||'<span class="mu">—</span>';
+  return `<h2>التقارير</h2><div class="card">${weekSel()}<div class="mu" style="margin-top:8px">التقارير محسوبة على الأسبوع ده وشهره وسنته</div></div>
+  <div class="stats"><div class="stat"><b>${ids(wc).length}</b><span>حضروا الأسبوع</span></div><div class="stat"><b>${ids(mc).length}</b><span>حضروا الشهر</span></div><div class="stat"><b>${n}</b><span>محاضرات السنة</span></div></div>
+  <div class="card"><b>حضور الأسبوع</b><div style="margin-top:8px">${names(wc)}</div></div>
+  <div class="card"><b>حضور الشهر</b><div style="margin-top:8px">${names(mc)}</div></div>
+  <div class="card"><b>🏆 الأكثر حضورًا في ${y}</b>${top.slice(0,10).map((e,i)=>`<div class="kv"><span>${i+1}. ${esc(nm(e[0]))}</span><b>${e[1]} محاضرة</b></div>`).join("")||'<div class="empty">—</div>'}</div>
+  <div class="card"><b>كشف الدرجات الكامل</b><div class="tbl" style="margin:8px 0"><table><tr><th>الاسم</th><th>المرحلة</th><th>حضور</th><th>بونص</th><th>ماينس</th><th>الدرجات</th></tr>${[...S].sort((a,b)=>a.name.localeCompare(b.name,"ar")).map(s=>`<tr><td>${esc(s.name)}</td><td>${s.stage}</td><td>${yc[s.id]||0}</td><td>${(P[s.id]||{}).b||0}</td><td>${(P[s.id]||{}).m||0}</td><td>${((G[s.id]||{}).l||[]).map(x=>esc(x.t)+" "+x.s).join("، ")}</td></tr>`).join("")}</table></div><button class="btn f" onclick="csv()">⬇ تحميل الكشف (Excel)</button></div>`;
+}
+async function csv(){
+  const y=date.slice(0,4),yc=cnt(d=>d.startsWith(y));
+  const rows=[["الاسم","المرحلة","الحضور","بونص","ماينس","الدرجات","المجموع"]];
+  S.forEach(s=>{const l=(G[s.id]||{}).l||[];rows.push([s.name,s.stage,yc[s.id]||0,(P[s.id]||{}).b||0,(P[s.id]||{}).m||0,l.map(x=>x.t+":"+x.s).join(" / "),l.reduce((a,x)=>a+x.s,0)])});
+  const data="\uFEFF"+rows.map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(",")).join("\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"text/csv;charset=utf-8"}));a.download="kashf-"+y+".csv";a.click();
+}
+/* search */
+function qRes(){
+  const q=qq.trim();if(!q)return '<div class="empty">اكتب اسم الولد</div>';
+  const r=S.filter(s=>s.name.includes(q));if(!r.length)return '<div class="empty">مفيش نتيجة</div>';
+  return r.map(s=>{const ds=Object.keys(A).filter(d=>pres(d).includes(s.id)).sort(),p=P[s.id]||{},l=(G[s.id]||{}).l||[];
+  return `<div class="card"><div class="row" style="padding-top:0">${av(s)}<div class="nm"><b>${esc(s.name)}</b><span>${s.stage}</span></div></div>
+  <div class="stats"><div class="stat"><b>${ds.length}</b><span>حضور</span></div><div class="stat"><b>${p.b||0}</b><span>بونص</span></div><div class="stat"><b>${p.m||0}</b><span>ماينس</span></div></div>
+  <div class="mu">الدرجات</div><div style="margin:6px 0 10px">${l.map(x=>`<span class="pill">${esc(x.t)}: <b>${x.s}</b></span>`).join("")||"—"}</div>
+  <div class="mu">أيام الحضور</div><div style="margin-top:6px">${ds.map(d=>`<span class="pill">${d}</span>`).join("")||"—"}</div></div>`}).join("");
+}
+function vQ(){return `<h2>استعلام عن ولد</h2><div class="card"><input id="qi" placeholder="🔍 اكتب الاسم" value="${esc(qq)}" oninput="setQ(this.value)"></div><div id="qr">${qRes()}</div>`}
+/* admin */
+function vLogin(){return `<div class="card" style="margin-top:30px"><h2>تسجيل الدخول</h2><div class="gap"><input id="em" type="email" placeholder="الإيميل" autocomplete="username"></div><div class="gap"><input id="pw" type="password" placeholder="الباسورد" autocomplete="current-password"></div><button class="btn f" onclick="login()">دخول</button></div>`}
+async function login(){try{await signInWithEmailAndPassword(auth,$("em").value.trim(),$("pw").value)}catch(e){alert("الإيميل أو الباسورد غلط")}}
+function out(){signOut(auth)}
+function vAdm(){
+  return `<h2>الإدارة</h2><div class="card"><div class="kv"><span>الحساب</span><b style="font-size:13px">${esc(user.email)}</b></div><div class="kv"><span>الصلاحية</span><b>${isOwner?"الأدمن الرئيسي":"أدمن مساعد"}</b></div><div class="kv"><span>عدد الأولاد</span><b>${S.length}</b></div><div class="kv"><span>أيام الحضور المسجلة</span><b>${Object.keys(A).length}</b></div></div>`
+  +(isOwner?`<div class="card"><b>إضافة أدمن</b><div class="gap" style="margin-top:10px"><input id="an" placeholder="الاسم"></div><div class="gap"><input id="ae" type="email" placeholder="الإيميل"></div><div class="gap"><input id="ap" type="text" placeholder="باسورد (6 حروف على الأقل)"></div><button class="btn f" onclick="addAdm()">＋ إضافة أدمن</button></div>
+  <div class="card"><b>الأدمنات (${admins.length})</b>${admins.map(a=>`<div class="row"><div class="nm"><b>${esc(a.name||"")}</b><span>${esc(a.email||"")}</span></div><button class="btn s" onclick="resetAdm('${esc(a.email||"")}')">تغيير الباسورد</button><button class="btn s" onclick="delAdm('${a.id}','${esc(a.name||"")}')">إزالة</button></div>`).join("")||'<div class="empty">مفيش أدمنات لسه</div>'}</div>`:'')
+  +`<button class="btn s f" onclick="out()">تسجيل الخروج</button>`;
+}
+async function addAdm(){const n=$("an").value.trim(),e=$("ae").value.trim(),p=$("ap").value;if(!n||!e||p.length<6)return alert("اكتب الاسم والإيميل وباسورد 6 حروف على الأقل");
+  try{const au=getAuth(initializeApp(cfg,"s"+Date.now()));const c=await createUserWithEmailAndPassword(au,e,p);await setDoc(doc(db,"admins",c.user.uid),{name:n,email:e});await signOut(au);alert("تمت إضافة الأدمن");$("an").value=$("ae").value=$("ap").value=""}catch(x){alert(x.code==="auth/email-already-in-use"?"الإيميل ده مسجّل قبل كده":"ماتمّش: "+(x.code||x.message))}}
+async function resetAdm(e){try{await sendPasswordResetEmail(auth,e);alert("اتبعت رابط تغيير الباسورد على "+e)}catch(x){alert("ماتمّش")}}
+function delAdm(id,n){if(confirm("إزالة "+n+"؟"))w(()=>deleteDoc(doc(db,"admins",id)))}
+const setStage=x=>{stage=x;draw()},setDate=v=>{date=v;draw()},setQ=v=>{qq=v;$("qr").innerHTML=qRes()};
+Object.assign(window,{go,sh,tog,addS,delS,pt,addG,csv,login,out,addAdm,resetAdm,delAdm,setStage,setDate,setQ});
+init();
+</script>
+</body>
+</html>
